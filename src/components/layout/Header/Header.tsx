@@ -1,5 +1,6 @@
 // import React from 'react'
 import { useState, type CSSProperties, type MouseEvent } from "react";
+import Aside from "../../atom/Aside/Aside";
 import headerStyle from "./header.module.scss";
 
 function Header() {
@@ -55,7 +56,7 @@ setChevronStyle2({transform:"rotateX(180deg)"})
 
   return (
     <header className={headerStyle.header}>
-    <aside> dc api </aside>
+    <Aside/>
 
     <section className={headerStyle.right}>
 
