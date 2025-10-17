@@ -1,9 +1,15 @@
 // import React from 'react';
-import "./main.scss";
+import Introduction from "../atom/Introduction/Introduction";
+import mainstyle from "./main.module.scss";
 
 function Main() {
   return (
-    <main>Main</main>
+    <main className={mainstyle.main}>
+    <Introduction className={mainstyle.introduction}/>
+
+
+
+    </main>
   )
 }
 
