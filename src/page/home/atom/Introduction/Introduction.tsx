@@ -1,12 +1,10 @@
-import React from 'react';
+// import React from 'react';
+import introdctionStyle from "./introduction.module.scss";
 
-type classNameType = {
-  className: string
-}
 
-function Introduction({ className }: classNameType) {
+function Introduction() {
   return (
-    <section className={className} >
+    <section className={introdctionStyle.introduction} >
       <h2> <span >&#127757;</span> <span>Introduction</span></h2>
 
 
