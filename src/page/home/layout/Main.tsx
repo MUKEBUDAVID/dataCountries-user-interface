@@ -3,6 +3,7 @@ import BaseUrl from "../molecule/baseUrl/BaseUrl";
 import Introduction from "../atom/Introduction/Introduction";
 import mainstyle from "./main.module.scss";
 import Authentification from "../molecule/ Authentification/ Authentification";
+import Endpoints from "../molecule/ Endpoints/ Endpoints";
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
     <Introduction />
     <BaseUrl />
     <Authentification/>
+    <Endpoints/>
     
 
 
