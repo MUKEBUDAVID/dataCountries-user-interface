@@ -50,6 +50,7 @@ const changeStyle = (e: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>) =>
     <a href="#8" onClick={changeStyle} style={activeStyle[8]}>Limites et Quotas</a>
     <a href="#9"onClick={changeStyle} style={activeStyle[9]}>Exemples d'Utilisation</a>
    </nav>
+   
     </aside>
   )
 }

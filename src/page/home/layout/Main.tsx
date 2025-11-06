@@ -4,6 +4,7 @@ import Introduction from "../atom/Introduction/Introduction";
 import mainstyle from "./main.module.scss";
 import Authentification from "../molecule/ Authentification/ Authentification";
 import Endpoints from "../molecule/ Endpoints/ Endpoints";
+import FormatData from "../molecule/FormatData/FormatData";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
     <BaseUrl />
     <Authentification/>
     <Endpoints/>
+    <FormatData/>
     
 
 

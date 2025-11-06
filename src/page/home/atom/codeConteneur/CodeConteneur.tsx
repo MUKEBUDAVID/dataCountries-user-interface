@@ -1,14 +1,17 @@
 
+import { useEffect, useState,type ReactNode, type PropsWithChildren } from "react";
 import codeConteneurStyle from "./codeConteneur.module.scss";
 import toast,{Toaster} from 'react-hot-toast';
 
-type codeConteneurType={
+type codeConteneurType=PropsWithChildren<{
   langage:string,
-  
-  code:string
-}
+  code:string,
+ 
+}>
 
-function CodeConteneur({langage,code}:codeConteneurType) {
+function CodeConteneur({langage,code,children}:codeConteneurType) {
+
+const [codeProvider,setCodeProvider]=useState<ReactNode|string|undefined>(" ");
 
   
   const notify = () => toast("is copier",{
@@ -32,6 +35,15 @@ function CodeConteneur({langage,code}:codeConteneurType) {
   };
 
 
+ useEffect(()=>{
+  
+if(langage==="Text" ){
+    setCodeProvider(code)
+}else{
+  setCodeProvider(children)
+}
+})
+
   return (
    <> 
    <div className={codeConteneurStyle.codeConteneur} >
@@ -40,7 +52,9 @@ function CodeConteneur({langage,code}:codeConteneurType) {
     <div className={codeConteneurStyle.headercode}><span>{langage}</span>  <img onClick={handleCopy} title="copie code" src="img/copy.svg" alt="copiIcon" /></div>
 
    <div className={codeConteneurStyle.codeDiv}>
-   <span>{code}</span>
+
+    {codeProvider}
+   
    </div>
 
       </div>
