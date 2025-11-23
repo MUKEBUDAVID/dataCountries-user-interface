@@ -2,11 +2,11 @@
 import BaseUrl from "../molecule/baseUrl/BaseUrl";
 import Introduction from "../atom/Introduction/Introduction";
 import mainstyle from "./main.module.scss";
-import Authentification from "../molecule/ Authentification/ Authentification";
-import Endpoints from "../molecule/ Endpoints/ Endpoints";
-import FormatData from "../molecule/FormatData/FormatData";
-import ParamReq from "../molecule/ParamReq/ParamReq";
-
+import Authentification from "../molecule/authentification/ Authentification";
+import Endpoints from "../molecule/endpoints/ Endpoints";
+import FormatData from "../molecule/formatData/FormatData";
+import ParamReq from "../molecule/paramReq/ParamReq";
+import CodeStatut from "../molecule/codeStatut/CodeStatut";
 function Main() {
   return (
     <main className={mainstyle.main}>
@@ -16,6 +16,7 @@ function Main() {
     <Endpoints/>
     <FormatData/>
     <ParamReq/>
+    <CodeStatut/>
     
 
 

@@ -23,8 +23,6 @@ function ParamReq() {
 </div>
 
 
-
-
 <div>
 <h3>Paramètres pour <span className={paramReqStyle.path}>/countries/search</span></h3>
 
@@ -39,9 +37,6 @@ function ParamReq() {
   <li><span className={paramReqStyle.path}>unMember</span>(boolean) : Membres de l'ONU seulement</li>
 </ul>
 </div>
-
-
-
 
 
 <div>
