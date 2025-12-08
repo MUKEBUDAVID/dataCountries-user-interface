@@ -6,6 +6,7 @@ import toast,{Toaster} from 'react-hot-toast';
 type codeConteneurType=PropsWithChildren<{
   langage:string,
   code:string,
+  
  
 }>
 
@@ -42,7 +43,7 @@ if(langage==="Text" ){
 }else{
   setCodeProvider(children)
 }
-})
+},[code,langage,children])
 
   return (
    <> 

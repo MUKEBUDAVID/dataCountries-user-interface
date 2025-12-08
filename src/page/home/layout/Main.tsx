@@ -7,6 +7,7 @@ import Endpoints from "../molecule/endpoints/ Endpoints";
 import FormatData from "../molecule/formatData/FormatData";
 import ParamReq from "../molecule/paramReq/ParamReq";
 import CodeStatut from "../molecule/codeStatut/CodeStatut";
+import GestionError from "../molecule/gestionError/GestionError";
 function Main() {
   return (
     <main className={mainstyle.main}>
@@ -17,6 +18,7 @@ function Main() {
     <FormatData/>
     <ParamReq/>
     <CodeStatut/>
+    <GestionError/>
     
 
 
