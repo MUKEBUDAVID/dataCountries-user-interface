@@ -8,6 +8,7 @@ import FormatData from "../molecule/formatData/FormatData";
 import ParamReq from "../molecule/paramReq/ParamReq";
 import CodeStatut from "../molecule/codeStatut/CodeStatut";
 import GestionError from "../molecule/gestionError/GestionError";
+import LimiteQuota from "../molecule/limiteQuota/LimiteQuota";
 function Main() {
   return (
     <main className={mainstyle.main}>
@@ -19,6 +20,7 @@ function Main() {
     <ParamReq/>
     <CodeStatut/>
     <GestionError/>
+    <LimiteQuota/>
     
 
 

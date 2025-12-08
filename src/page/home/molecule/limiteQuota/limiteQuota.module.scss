@@ -1,0 +1,57 @@
+.limiteQuota{
+
+    height: max-content;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(73, 73, 73);
+
+
+    h2 {
+      margin-bottom: 40px;
+       word-spacing: 10px;
+       }
+       h2 span:nth-child(1){
+        font-size: 30px;
+       }
+      
+       h2 span:nth-child(2){
+         font-family: "Poppins", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        font-size:3rem; 
+         }
+
+         .liste{
+        width: max-content; 
+        height: max-content;
+        margin-top: 50px;
+        font-family: "Poppins", sans-serif;   
+         }  
+
+         .liste h5{
+
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-size:2rem;
+            margin-bottom: 10px; 
+        }
+        
+        .liste ul{
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            line-height: 40px;
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+           font-weight: 400;
+           font-style: normal;
+          font-size:2rem; 
+          
+        }
+
+
+}
