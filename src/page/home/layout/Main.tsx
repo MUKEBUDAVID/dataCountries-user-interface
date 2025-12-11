@@ -9,6 +9,7 @@ import ParamReq from "../molecule/paramReq/ParamReq";
 import CodeStatut from "../molecule/codeStatut/CodeStatut";
 import GestionError from "../molecule/gestionError/GestionError";
 import LimiteQuota from "../molecule/limiteQuota/LimiteQuota";
+import ExempleCode from "../molecule/exempleCode/ExempleCode";
 function Main() {
   return (
     <main className={mainstyle.main}>
@@ -21,6 +22,7 @@ function Main() {
     <CodeStatut/>
     <GestionError/>
     <LimiteQuota/>
+    <ExempleCode/>
     
 
 
