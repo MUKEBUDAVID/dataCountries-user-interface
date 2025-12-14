@@ -1,7 +1,6 @@
 import { HeadProvider, Title, Link, Meta} from "react-head";
 import Header from "../../components/layout/Header/Header";
 import Main from "./layout/Main";
-// import Footer from "../../components/layout/Fouter/Footer";
 
 
 function Home() {
@@ -18,10 +17,12 @@ function Home() {
     </div>
   </HeadProvider>
 
-
+<>
 <Header/>
   <Main/>
-  {/* <Footer/> */}
+  
+  </>
+
   
 
     

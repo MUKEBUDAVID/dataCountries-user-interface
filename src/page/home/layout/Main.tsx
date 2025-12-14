@@ -10,6 +10,7 @@ import CodeStatut from "../molecule/codeStatut/CodeStatut";
 import GestionError from "../molecule/gestionError/GestionError";
 import LimiteQuota from "../molecule/limiteQuota/LimiteQuota";
 import ExempleCode from "../molecule/exempleCode/ExempleCode";
+import Footer from "../../../components/layout/Footer/Footer";
 function Main() {
   return (
     <main className={mainstyle.main}>
@@ -23,6 +24,10 @@ function Main() {
     <GestionError/>
     <LimiteQuota/>
     <ExempleCode/>
+  
+
+   {/* exception */}
+    <Footer/>
     
 
 

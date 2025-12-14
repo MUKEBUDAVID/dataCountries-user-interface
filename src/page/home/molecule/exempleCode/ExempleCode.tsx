@@ -36,7 +36,7 @@ fetchCountryData('FR')
 
 def get_country_info(country_code):
     headers = {'Authorization': 'Bearer VOTRE_CLE_API'}
-    url = f'https://api.datacountrie.com/v1/countries/{country_code}'
+    url = 'https://api.datacountrie.com/v1/countries/{country_code}'
     
     response = requests.get(url, headers=headers)
     response.raise_for_status()
