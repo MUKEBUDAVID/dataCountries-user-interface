@@ -1,8 +1,10 @@
-import CodeConteneur from "../../atom/codeConteneur/CodeConteneur"
+import { forwardRef } from "react";
+import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
 import formatDataStyle from "./formatData.module.scss";
 import Highlight from "../../../../util/Highlight";
 
-function FormatData() {
+
+const FormatData=forwardRef<HTMLElement>((_,ref)=> {
 const codeJsonPays=`{
   "success": true,
   "data": {
@@ -101,7 +103,7 @@ const codeJsonVille=`{
 }`
 
   return (
-    <section className={formatDataStyle.formatData}>
+    <section className={formatDataStyle.formatData} id="4" ref={ref}>
 
         <h2><span>📊</span> <span>Format des Données</span></h2>
 
@@ -124,6 +126,8 @@ const codeJsonVille=`{
 
     </section>
   )
-}
+})
+
+FormatData.displayName = "FormatData";
 
 export default FormatData

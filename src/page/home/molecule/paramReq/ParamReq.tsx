@@ -1,9 +1,10 @@
-// import React from "react";
+import { forwardRef } from "react";
 import paramReqStyle from "./paramReq.module.scss"
 
-function ParamReq() {
+
+const ParamReq=forwardRef<HTMLElement>((_,ref)=> {
   return (
-    <section className={paramReqStyle.paramReq}>
+    <section className={paramReqStyle.paramReq} id="5" ref={ref}>
         <h2><span>🔍</span> <span>Paramètres de Requête</span></h2>
 
 
@@ -55,6 +56,7 @@ function ParamReq() {
         
     </section>
   )
-}
+})
 
+ParamReq.displayName="ParamReq"
 export default ParamReq

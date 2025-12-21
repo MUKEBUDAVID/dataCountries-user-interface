@@ -1,8 +1,14 @@
+import { forwardRef } from "react";
 import limiteQuotaStyles from "./limiteQuota.module.scss";
 
-function LimiteQuota() {
+
+
+
+
+
+const  LimiteQuota=forwardRef<HTMLElement>((_,ref)=> {
   return (
-    <section className={limiteQuotaStyles.limiteQuota}>
+    <section className={limiteQuotaStyles.limiteQuota} id="8" ref={ref}>
     <h2><span>⚡ </span> <span>Limites et Quotas</span></h2>
 
   <div className={limiteQuotaStyles.liste}>
@@ -31,6 +37,7 @@ function LimiteQuota() {
 
         </section>
   )
-}
+})
 
+LimiteQuota.displayName="LimiteQuota"
 export default LimiteQuota

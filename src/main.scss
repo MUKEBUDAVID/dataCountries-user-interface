@@ -9,23 +9,21 @@
     box-sizing: inherit;
 }
 
-html {
-   /* 10px div by def of 16px */
-    font-size: 62.5%;
-    
-}
-
-body{
+html,body{
+  /* 10px div by def of 16px */
+  font-size: 62.5%;
   background:#14171D;
   color: white;
   display: flex;
   // width: 100%;
   height: max-content;
   flex-direction: column;
-  position: relative;
   overflow-x: hidden;
   
-}
+  
+   
+ 
+    }
 
 
 

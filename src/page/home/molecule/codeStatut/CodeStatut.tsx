@@ -1,8 +1,14 @@
+import { forwardRef } from "react";
 import CodeStatutStyle from "./codeStatut.module.scss";
 
-function CodeStatut() {
+
+
+const CodeStatut=forwardRef<HTMLTableElement>((_,ref)=> {
   return (
-    <table className={CodeStatutStyle.CodeStatut}>
+    <div >
+
+    
+    <table className={CodeStatutStyle.CodeStatut} id="6" ref={ref} >
 
 <caption><span>📋</span> <span>Codes de Statut HTTP</span></caption>
         
@@ -65,12 +71,13 @@ function CodeStatut() {
  </tr>
 
  </tbody>
-
-
-  
-        
+ 
         </table>
+
+        </div>        
   )
-}
+}) 
+
+CodeStatut.displayName="CodeStatut"
 
 export default CodeStatut

@@ -1,9 +1,10 @@
-import CodeConteneur from "../../atom/codeConteneur/CodeConteneur"
-import  EndpointStyle from "./ Endpoint.module.scss"
+import { forwardRef } from "react";
+import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
+import  EndpointStyle from "./ Endpoint.module.scss";
 
-function  Endpoints() {
+const Endpoints=forwardRef<HTMLElement>((_,ref)=> {
   return (
-    <section className={EndpointStyle. Endpoints}> 
+    <section className={EndpointStyle. Endpoints} id="3" ref={ref}> 
 
     <h2> <span>📡</span>  <span>Endpoints</span></h2>
 
@@ -49,6 +50,9 @@ function  Endpoints() {
 
     </section>
   )
-}
+})
+
+Endpoints.displayName = "Endpoints";
+
 
 export default  Endpoints

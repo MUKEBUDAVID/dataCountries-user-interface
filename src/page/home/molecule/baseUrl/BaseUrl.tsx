@@ -1,10 +1,13 @@
-// import React from 'react'
-import CodeConteneur from "../../atom/codeConteneur/CodeConteneur"
+
+import {forwardRef} from "react";
+import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
 import BaseUrlStyle from "./baseUrl.module.scss"
 
-function BaseUrl() {
+
+ const BaseUrl=forwardRef<HTMLElement>((_,ref)=> {
+  
   return (
-    <section className={BaseUrlStyle.BaseUrl}>
+    <section className={BaseUrlStyle.BaseUrl} id="0" ref={ref}>
 
       <h2><span>🔗</span> <span>Base URL</span></h2>
 
@@ -15,6 +18,8 @@ function BaseUrl() {
 
     </section>
   )
-}
+})
+
+ BaseUrl.displayName="BaseUrl"
 
 export default BaseUrl

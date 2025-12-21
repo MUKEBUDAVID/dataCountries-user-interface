@@ -1,8 +1,11 @@
+import { forwardRef } from "react";
 import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
 import gestionErrorStyle from "./gestionError.module.scss";
-import Highlight from "../../../../util/Highlight"
+import Highlight from "../../../../util/Highlight";
 
-function GestionError() {
+
+
+const GestionError=forwardRef<HTMLElement>((_,ref)=> {
 
 const codeJsonEroor=`
 
@@ -18,7 +21,7 @@ const codeJsonEroor=`
 `
 
   return (
-    <section className={gestionErrorStyle.gestionError}>
+    <section className={gestionErrorStyle.gestionError} id="7" ref={ref}>
        
         <h2> <span>❌</span>  <span> GestionError</span></h2>
 
@@ -47,6 +50,8 @@ const codeJsonEroor=`
  
     </section>
   )
-}
+})
+
+GestionError.displayName="GestionError"
 
 export default GestionError

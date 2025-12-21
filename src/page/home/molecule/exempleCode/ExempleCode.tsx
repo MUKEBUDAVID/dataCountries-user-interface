@@ -1,8 +1,11 @@
+import{ forwardRef } from "react";
 import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
 import Highlight from "../../../../util/Highlight"
 import exempleCodeStyle from "./exempleCode.module.scss";
 
-function ExempleCode() {
+
+
+const  ExempleCode=forwardRef<HTMLElement>((_,ref)=> {
 
   const exemple1=`curl -X GET "https://api.datacountrie.com/v1/countries/FR" \\  -H "Authorization: Bearer VOTRE_CLE_API"`;
 
@@ -53,7 +56,7 @@ except requests.exceptions.RequestException as e:
   
 
   return (
-    <section className={exempleCodeStyle.exempleCode} >
+    <section className={exempleCodeStyle.exempleCode} id="9" ref={ref} >
      <h2><span>💡</span><span>Exemples d'utilisation</span></h2>
 
 
@@ -114,6 +117,8 @@ except requests.exceptions.RequestException as e:
       </div>
     </section>
   )
-}
+})
+
+ExempleCode.displayName="ExempleCode"
 
 export default ExempleCode

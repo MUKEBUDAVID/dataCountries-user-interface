@@ -1,10 +1,11 @@
-// import React from 'react';
+import {forwardRef} from "react";
 import introdctionStyle from "./introduction.module.scss";
 
 
-function Introduction() {
+const Introduction=forwardRef<HTMLElement>((_,ref)=> {
+
   return (
-    <section className={introdctionStyle.introduction} >
+    <section className={introdctionStyle.introduction} id="0" ref={ref} >
       <h2> <span >&#127757;</span> <span>Introduction</span></h2>
 
 
@@ -23,6 +24,8 @@ function Introduction() {
 
     </section>
   )
-}
+})
+
+Introduction.displayName = "Introduction";
 
 export default Introduction

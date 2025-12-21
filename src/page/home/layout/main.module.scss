@@ -1,22 +1,15 @@
 .main{
    //  background-color: yellowgreen;
    width: calc(100vw - 200px);
-   height: 90vh;
+   height: max-content;
    margin-left: 200px;
    overflow-y: scroll;
    scrollbar-width: large;
    scrollbar-color: #9F9F9F #2C2C2C; 
+   scroll-behavior: smooth;
+   padding-top: 10px;
+  
    
-
-
-
-
-
-
-
-
-
-
-
+   
 
 }

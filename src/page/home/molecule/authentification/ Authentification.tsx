@@ -1,10 +1,10 @@
+import { forwardRef} from "react";
 import CodeConteneur from "../../atom/codeConteneur/CodeConteneur";
 import AuthentificationStyle from "./ authentification.module.scss"
 
-
-function  Authentification() {
+const Authentification=forwardRef<HTMLElement>((_,ref)=> {
   return (
-    <section className={AuthentificationStyle.authentification}>
+    <section className={AuthentificationStyle.authentification} id="2" ref={ref}>
         <h2>
            <span>🔐 </span> <span> Authentification</span>
         </h2>
@@ -24,6 +24,8 @@ function  Authentification() {
     </ol>
     </section>
   )
-}
+})
+
+Authentification.displayName="Authentification"
 
 export default  Authentification
